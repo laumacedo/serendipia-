@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serendipia 💜</title>
-    <!-- O código abaixo força o Safari a limpar o histórico antigo na hora -->
     <link rel="stylesheet" href="style.css?v=3">
-    <!-- Linha adicionada: Conecta o arquivo de identidade do app -->
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -15,14 +13,27 @@
     <div id="tela-senha" class="tela">
         <div class="conteudo-login">
             <h2>Digite a senha para entrar:</h2>
-            <input type="password" id="campo-senha" placeholder="Senha...">
+            <input type="number" pattern="[0-9]*" inputmode="numeric" id="campo-senha" placeholder="Senha...">
             <button onclick="verificarSenha()">Entrar</button>
         </div>
     </div>
 
-    <!-- TELA 2: TELA DA MÚSICA (SEM A PALAVRA APORTOU) -->
+    <!-- TELA 2: MENSAGEM DO KM (NOVA) -->
+    <div id="tela-km" class="tela escondido">
+        <div class="conteudo-login">
+            <img src="IMG_1191.jpeg" alt="Foto KM" style="max-width: 85%; border-radius: 10px; margin-bottom: 15px;">
+            <h1 class="mensagem-principal" style="font-size: 20px; line-height: 1.5; padding: 0 10px;">
+                Que Deus te acompanhe em cada quilômetro… Onde quer que você vá, pilote com cuidado, e saiba que nós te amamos!
+            </h1>
+            <br>
+            <button onclick="irParaAperteComecar()" style="font-size: 24px; padding: 10px 20px;">➔</button>
+        </div>
+    </div>
+
+    <!-- TELA 3: TELA DA MÚSICA (AGORA COM FOTO 0604) -->
     <div id="tela-principal" class="tela escondido">
         <div class="conteudo-login">
+            <img src="IMG_0604.jpeg" alt="Foto Iniciar" style="max-width: 85%; border-radius: 10px; margin-bottom: 15px;">
             <h1 class="mensagem-principal">serendipia 💜</h1>
             <audio id="musica" src="AUDIO-2026-06-11-22-35-47.mp3" preload="auto" loop></audio>
             <br>
@@ -30,10 +41,9 @@
         </div>
     </div>
 
-    <!-- TELA 3: LOOP DE FOTOS E MENSAGEM SURPRESA -->
+    <!-- TELA 4: LOOP DE FOTOS -->
     <div id="tela-fotos" class="tela escondido">
         <img id="slide" src="" alt="Loop de Fotos">
-        <!-- Caixinha centralizada com a mensagem para o Renato -->
         <div id="mensagem-final" class="conteudo-login escondido">
             <h1 style="font-size: 24px; margin: 0; line-height: 1.5;">Sim! eu amo muito você Renato💕</h1>
         </div>
@@ -41,12 +51,11 @@
 
     <script src="script.js"></script>
     
-    <!-- Bloco adicionado: Ativa o modo offline no navegador -->
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js')
-          .then(() => console.log('Modo offline ativado com sucesso!'))
-          .catch((err) => console.log('Erro ao ativar modo offline:', err));
+          .then(() => console.log('Pronto!'))
+          .catch((err) => console.log('Erro:', err));
       }
     </script>
 </body>
