@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serendipia 💜</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     <link rel="manifest" href="manifest.json">
+    
+    <!-- Força o celular a carregar as duas fotos de fundo instantaneamente -->
+    <link rel="preload" href="IMG_1191.jpeg" as="image">
+    <link rel="preload" href="IMG_0604.jpeg" as="image">
 </head>
 <body>
 
@@ -18,7 +22,7 @@
         </div>
     </div>
 
-    <!-- TELA 2: MENSAGEM DO KM (NOVA) -->
+    <!-- TELA 2: MENSAGEM DO KM -->
     <div id="tela-km" class="tela escondido">
         <div class="conteudo-login">
             <img src="IMG_1191.jpeg" alt="Foto KM" style="max-width: 85%; border-radius: 10px; margin-bottom: 15px;">
@@ -30,7 +34,7 @@
         </div>
     </div>
 
-    <!-- TELA 3: TELA DA MÚSICA (AGORA COM FOTO 0604) -->
+    <!-- TELA 3: TELA DA MÚSICA -->
     <div id="tela-principal" class="tela escondido">
         <div class="conteudo-login">
             <img src="IMG_0604.jpeg" alt="Foto Iniciar" style="max-width: 85%; border-radius: 10px; margin-bottom: 15px;">
