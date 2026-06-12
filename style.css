@@ -6,13 +6,19 @@ body {
     padding: 0;
     background-color: #0b0c10;
     color: #fff;
-    font-family: 'Merriweather', serif; /* Nova fonte aplicada aqui */
+    font-family: 'Merriweather', serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
 }
+
+/* GARANTE QUE O TEXTO "serendipia 💜" USE A FONTE CORRETA */
+h1, h2, p, span {
+    font-family: 'Merriweather', serif !important;
+}
+
 .tela {
     text-align: center;
     width: 100%;
@@ -62,7 +68,7 @@ input, button {
     margin: 10px;
     border-radius: 8px;
     border: none;
-    font-family: 'Merriweather', serif; /* Nova fonte aplicada nos botões e inputs */
+    font-family: 'Merriweather', serif !important;
 }
 button {
     background-color: #9146FF;
