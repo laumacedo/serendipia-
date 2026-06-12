@@ -1,8 +1,8 @@
 const SENHA_CORRETA = "112025";
-const TEMPO_TROCA = 1000; // Tempo de 1 segundo
+const TEMPO_TROCA = 1000; // Tempo de 1 segundo por foto
 
+// LISTA ATUALIZADA: Sem a foto de fundo, sem a IMG_1706 e sem repetidas
 const FOTOS = [
-    "IMG_2855.jpeg",
     "IMG_0024.jpeg",
     "IMG_0056.jpeg",
     "IMG_0062.jpeg",
@@ -32,7 +32,6 @@ const FOTOS = [
     "IMG_1190.jpeg",
     "IMG_1191.jpeg",
     "IMG_1296.jpeg",
-    "IMG_1706.png",
     "IMG_1760.jpeg",
     "IMG_2159.jpeg",
     "IMG_7888.jpeg",
