@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gut-rub-v4';
+const CACHE_NAME = 'gut-rub-v5';
 const ASSETS = [
   './',
   './index.html',
