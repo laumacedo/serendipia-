@@ -6,6 +6,8 @@
     <title>Serendipia 💜</title>
     <!-- O código abaixo força o Safari a limpar o histórico antigo na hora -->
     <link rel="stylesheet" href="style.css?v=3">
+    <!-- Linha adicionada: Conecta o arquivo de identidade do app -->
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
 
@@ -38,5 +40,14 @@
     </div>
 
     <script src="script.js"></script>
+    
+    <!-- Bloco adicionado: Ativa o modo offline no navegador -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+          .then(() => console.log('Modo offline ativado com sucesso!'))
+          .catch((err) => console.log('Erro ao ativar modo offline:', err));
+      }
+    </script>
 </body>
 </html>
