@@ -1,3 +1,4 @@
+/* IMPORTA A FONTE MERRIWEATHER DO GOOGLE FONTS */
 @import url('https://googleapis.com');
 
 body {
@@ -5,7 +6,7 @@ body {
     padding: 0;
     background-color: #0b0c10;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', serif; /* Nova fonte aplicada aqui */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +42,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* ALTERADO: FOTO DA PRIMEIRA TELA TAMBÉM DE FUNDO NO LOOP DE IMAGENS */
+/* FOTO DA PRIMEIRA TELA DE FUNDO NO LOOP DE IMAGENS */
 #tela-fotos {
     background-image: url('IMG_2855.jpeg'); 
     background-size: cover;
@@ -61,7 +62,7 @@ input, button {
     margin: 10px;
     border-radius: 8px;
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', serif; /* Nova fonte aplicada nos botões e inputs */
 }
 button {
     background-color: #9146FF;
@@ -70,11 +71,10 @@ button {
     cursor: pointer;
 }
 
-/* AS FOTOS DO LOOP FICA EM DESTAQUE POR CIMA DO FUNDO DA PRIMEIRA IMAGEM */
 #slide {
     max-width: 90%;
     max-height: 80vh;
     border-radius: 12px;
     object-fit: contain;
-    box-shadow: 0px 0px 30px rgba(0,0,0,0.85); /* Sombra mais escura para destacar bem do fundo */
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.85);
 }
