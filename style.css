@@ -13,7 +13,8 @@ body {
     overflow: hidden;
 }
 
-h1, h2, p, span {
+/* FORÇA A FONTE EM TODOS OS TEXTOS E TÍTULOS */
+h1, h2, p, span, div {
     font-family: 'Merriweather', serif !important;
 }
 
@@ -46,7 +47,7 @@ h1, h2, p, span {
     background-repeat: no-repeat;
 }
 
-/* FOTO DA PRIMEIRA TELA DE FUNDO NO LOOP DE IMAGENS */
+/* FOTO DA PRIMEIRA TELA TAMBÉM DE FUNDO NO LOOP DE IMAGENS */
 #tela-fotos {
     background-image: url('IMG_2855.jpeg'); 
     background-size: cover;
@@ -83,13 +84,13 @@ button {
     box-shadow: 0px 0px 30px rgba(0,0,0,0.85);
 }
 
-/* AJUSTE PARA A MENSAGEM FINAL FICAR BEM CENTRALIZADA E VISÍVEL */
+/* AJUSTE PARA A MENSAGEM FINAL FICAR BEM VISÍVEL E NO MEIO DA TELA */
 #mensagem-final {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.8) !important;
+    background: rgba(0, 0, 0, 0.85) !important;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
