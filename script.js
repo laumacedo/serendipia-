@@ -1,6 +1,7 @@
 const SENHA_CORRETA = "112025";
-const TEMPO_TROCA = 1000; // 1 segundo por foto
+const TEMPO_TROCA = 1000; // Exatamente 1 segundo por foto
 
+// SUA LISTA ATUALIZADA COM AS 33 FOTOS EXCLUSIVAS
 const FOTOS = [
     "IMG_0024.jpeg", "IMG_0056.jpeg", "IMG_0062.jpeg", "IMG_0079.jpeg",
     "IMG_0096.jpeg", "IMG_0101.jpeg", "IMG_0128.jpeg", "IMG_0248.jpeg",
@@ -30,21 +31,19 @@ function iniciarLoop() {
     document.getElementById("musica").play().catch(e => console.log(e));
     
     mudarFoto();
-    // Guarda o loop em uma variável para podermos pará-lo depois
     intervaloLoop = setInterval(mudarFoto, TEMPO_TROCA);
 }
 
 function mudarFoto() {
     const imgSlide = document.getElementById("slide");
     
-    // Se ainda tiver fotos na lista, continua passando
     if (indiceFoto < FOTOS.length) {
         imgSlide.src = FOTOS[indiceFoto];
         indiceFoto++;
     } else {
-        // QUANDO AS FOTOS ACABAREM:
-        clearInterval(intervaloLoop); // Para o cronômetro
-        imgSlide.classList.add("escondido"); // Esconde o carrossel de fotos
-        document.getElementById("mensagem-final").classList.remove("escondido"); // Mostra a mensagem do Renato
+        // PARADA NO FINAL DO CARROSSEL
+        clearInterval(intervaloLoop); 
+        imgSlide.classList.add("escondido"); 
+        document.getElementById("mensagem-final").classList.remove("escondido"); 
     }
 }
