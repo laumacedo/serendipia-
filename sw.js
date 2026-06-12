@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gut-rub-v5';
+const CACHE_NAME = 'gut-rub-v6';
 const ASSETS = [
   './',
   './index.html',
@@ -54,3 +54,4 @@ self.addEventListener('fetch', (e) => {
     caches.match(e.request).then((response) => response || fetch(e.request))
   );
 });
+
