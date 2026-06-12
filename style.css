@@ -1,9 +1,11 @@
+@import url('https://googleapis.com');
+
 body {
     margin: 0;
     padding: 0;
     background-color: #0b0c10;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,16 +25,32 @@ body {
     display: none !important;
 }
 
-/* AQUI FICA A SUA IMAGEM DE FUNDO NA TELA DA SENHA */
+/* FOTO DE FUNDO NA TELA DA SENHA */
 #tela-senha {
+    background-image: url('IMG_2855.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* FOTO DE FUNDO NA TELA PRINCIPAL (APÓS A SENHA) */
+#tela-principal {
     background-image: url('IMG_1191.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* ALTERADO: FOTO DA PRIMEIRA TELA TAMBÉM DE FUNDO NO LOOP DE IMAGENS */
+#tela-fotos {
+    background-image: url('IMG_2855.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .conteudo-login {
-    background: rgba(0, 0, 0, 0.75); /* Fundo escuro para destacar o texto */
+    background: rgba(0, 0, 0, 0.75);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
@@ -43,6 +61,7 @@ input, button {
     margin: 10px;
     border-radius: 8px;
     border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 button {
     background-color: #9146FF;
@@ -50,9 +69,12 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
+
+/* AS FOTOS DO LOOP FICA EM DESTAQUE POR CIMA DO FUNDO DA PRIMEIRA IMAGEM */
 #slide {
     max-width: 90%;
-    max-height: 85vh;
+    max-height: 80vh;
     border-radius: 12px;
     object-fit: contain;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.85); /* Sombra mais escura para destacar bem do fundo */
 }
