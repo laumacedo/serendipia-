@@ -1,26 +1,20 @@
-const CACHE_NAME = 'gut-rub-cache-v1';
+const CACHE_NAME = 'gut-rub-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  // Adicione aqui os caminhos dos seus arquivos CSS e JS, por exemplo:
-  // '/style.css',
-  // '/script.js'
+  './',
+  './index.html',
+  './style.css',
+  './script.js',
+  './AUDIO-2026-06-11-22-35-47.mp3'
 ];
 
-// Instala o Service Worker e salva os arquivos no cache
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS);
-    })
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
   );
 });
 
-// Responde com o cache quando estiver offline
 self.addEventListener('fetch', (e) => {
   e.respondWith(
-    caches.match(e.request).then((response) => {
-      return response || fetch(e.request);
-    })
+    caches.match(e.request).then((response) => response || fetch(e.request))
   );
 });
