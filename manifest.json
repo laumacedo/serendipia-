@@ -1,0 +1,9 @@
+{
+  "short_name": "GutRub",
+  "name": "Gut Rub Project",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "display": "standalone",
+  "icons": []
+}
