@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serendipia 💜</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- O código abaixo força o Safari a limpar o histórico antigo na hora -->
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -17,23 +18,22 @@
         </div>
     </div>
 
-    <!-- TELA 2: TELA PRINCIPAL (MENSAGEM SEM O NOME DA MÚSICA) -->
+    <!-- TELA 2: TELA DA MÚSICA (SEM A PALAVRA APORTOU) -->
     <div id="tela-principal" class="tela escondido">
         <div class="conteudo-login">
             <h1 class="mensagem-principal">serendipia 💜</h1>
-            <!-- O nome da música foi removido daqui -->
             <audio id="musica" src="AUDIO-2026-06-11-22-35-47.mp3" preload="auto" loop></audio>
             <br>
             <button id="btn-passar" onclick="iniciarLoop()">Clique para Iniciar</button>
         </div>
     </div>
 
-    <!-- TELA 3: LOOP DE FOTOS E TEXTO FINAL -->
+    <!-- TELA 3: LOOP DE FOTOS E MENSAGEM SURPRESA -->
     <div id="tela-fotos" class="tela escondido">
         <img id="slide" src="" alt="Loop de Fotos">
-        <!-- Caixinha escondida que só aparece no fim de todas as fotos -->
+        <!-- Caixinha centralizada com a mensagem para o Renato -->
         <div id="mensagem-final" class="conteudo-login escondido">
-            <h1 style="font-size: 24px; margin: 0;">Sim! eu amo muito você Renato💕</h1>
+            <h1 style="font-size: 24px; margin: 0; line-height: 1.5;">Sim! eu amo muito você Renato💕</h1>
         </div>
     </div>
 
