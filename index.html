@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi serendipia 💜</title>
+    <title>Serendipia 💜</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,20 +17,24 @@
         </div>
     </div>
 
-    <!-- TELA 2: TELA DA MÚSICA -->
+    <!-- TELA 2: TELA PRINCIPAL (MENSAGEM SEM O NOME DA MÚSICA) -->
     <div id="tela-principal" class="tela escondido">
         <div class="conteudo-login">
             <h1 class="mensagem-principal">serendipia 💜</h1>
-            <h2>Aportou 🎵</h2>
+            <!-- O nome da música foi removido daqui -->
             <audio id="musica" src="AUDIO-2026-06-11-22-35-47.mp3" preload="auto" loop></audio>
             <br>
             <button id="btn-passar" onclick="iniciarLoop()">Clique para Iniciar</button>
         </div>
     </div>
 
-    <!-- TELA 3: LOOP DE FOTOS -->
+    <!-- TELA 3: LOOP DE FOTOS E TEXTO FINAL -->
     <div id="tela-fotos" class="tela escondido">
         <img id="slide" src="" alt="Loop de Fotos">
+        <!-- Caixinha escondida que só aparece no fim de todas as fotos -->
+        <div id="mensagem-final" class="conteudo-login escondido">
+            <h1 style="font-size: 24px; margin: 0;">Sim! eu amo muito você Renato💕</h1>
+        </div>
     </div>
 
     <script src="script.js"></script>
